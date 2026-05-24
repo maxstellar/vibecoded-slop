@@ -4,19 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#0a1f14" />
+    <meta name="theme-color" content="#1a1f0e" />
     <meta
       name="description"
-      content="Green Team 2 — Hack Club: The Game. A squad of teen hackers building, shipping, and racking up XP."
+      content="The Greenhouse Effect — Hack Club: The Game. We&rsquo;re warming up the leaderboard. Climate-curious teen hackers."
     />
-    <meta property="og:title" content="Green Team 2 · Hack Club: The Game" />
+    <meta property="og:title" content="The Greenhouse Effect · Hack Club: The Game" />
     <meta
       property="og:description"
-      content="A squad of teen hackers building, shipping, and racking up XP for Hack Club: The Game."
+      content="Climate-curious teen hackers warming up the leaderboard. Hack Club: The Game."
     />
     <meta property="og:type" content="website" />
-    <title>Green Team 2 · Hack Club: The Game</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300ffa3'/%3E%3Cstop offset='1' stop-color='%2300c08b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M32 4C18 14 10 24 10 36c0 13 10 22 22 22s22-9 22-22c0-12-8-22-22-32zm0 14c8 7 14 14 14 22 0 8-6 14-14 14S18 48 18 40c0-8 6-15 14-22z'/%3E%3C/svg%3E" />
+    <title>The Greenhouse Effect · Hack Club: The Game</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c9e84a'/%3E%3Cstop offset='1' stop-color='%23ffb84d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M32 6 8 24v34h48V24L32 6Zm0 8 18 14v22H14V28l18-14Z'/%3E%3Cpath fill='url(%23g)' d='M28 34h8v18h-8z'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +25,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="theme-gh">
     <canvas id="bg-canvas" aria-hidden="true"></canvas>
     <div class="noise" aria-hidden="true"></div>
 
@@ -34,23 +34,23 @@
         <span class="teams-strip-label">teams &rarr;</span>
         <div class="teams-strip-list">
           <a href="green-team-1.html">Green Team 1</a>
-          <a class="active" href="index.html" aria-current="page">Green Team 2</a>
-          <a href="greenhouse-effect.html">Greenhouse Effect</a>
+          <a href="index.html">Green Team 2</a>
+          <a class="active" href="greenhouse-effect.html" aria-current="page">Greenhouse Effect</a>
           <a href="lettuce.html">Lettuce</a>
         </div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#top" aria-label="Green Team 2 home">
+        <a class="brand" href="#top" aria-label="The Greenhouse Effect home">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="22" height="22">
               <path
-                d="M12 2c-5 4-8 8-8 13a8 8 0 0 0 16 0c0-5-3-9-8-13Zm0 5c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9Z"
+                d="M12 3 3 10v11h18V10l-9-7Zm0 3 6 4.6V19h-3v-6h-6v6H6V10.6L12 6Z"
                 fill="currentColor"
               />
             </svg>
           </span>
           <span class="brand-text">
-            <span class="brand-line">GREEN&nbsp;TEAM&nbsp;2</span>
+            <span class="brand-line">GREENHOUSE&nbsp;EFFECT</span>
             <span class="brand-sub">hack club · the game</span>
           </span>
         </a>
@@ -68,21 +68,22 @@
       <section class="hero">
         <div class="hero-tag">
           <span class="dot"></span>
-          <span>Team #02 · Status: shipping</span>
+          <span>Team #03 · status: warming up</span>
         </div>
         <h1 class="hero-title">
-          <span class="line">We&rsquo;re</span>
-          <span class="line gradient">Green Team 2.</span>
-          <span class="line">We hack. We ship.</span>
+          <span class="line">We&rsquo;re the</span>
+          <span class="line gradient">Greenhouse&nbsp;Effect.</span>
+          <span class="line">We&rsquo;re cooking.</span>
         </h1>
         <p class="hero-sub">
-          A crew of teen hackers competing in
-          <strong>Hack&nbsp;Club: The&nbsp;Game</strong> — a season-long quest
-          where every commit, demo, and side project earns XP for the team.
+          A climate-curious crew in
+          <strong>Hack&nbsp;Club: The&nbsp;Game</strong>. We build dashboards,
+          sensors, and small tools for a planet that&rsquo;s having a tough
+          decade.
         </p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#join">
-            <span>Join the team</span>
+            <span>Get in the greenhouse</span>
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path
                 d="M5 12h14M13 5l7 7-7 7"
@@ -94,24 +95,24 @@
               />
             </svg>
           </a>
-          <a class="btn btn-ghost" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="#projects">See what we&rsquo;re cooking</a>
         </div>
         <div class="hero-meta">
           <div>
-            <span class="hero-meta-num" data-count="2026">0</span>
-            <span class="hero-meta-label">season</span>
+            <span class="hero-meta-num" data-count="3">0</span>
+            <span class="hero-meta-label">team number</span>
           </div>
           <div>
-            <span class="hero-meta-num" data-count="42">0</span>
+            <span class="hero-meta-num" data-count="29">0</span>
             <span class="hero-meta-label">commits / wk</span>
           </div>
           <div>
-            <span class="hero-meta-num" data-count="7">0</span>
-            <span class="hero-meta-label">projects live</span>
+            <span class="hero-meta-num" data-count="5">0</span>
+            <span class="hero-meta-label">sensors live</span>
           </div>
           <div>
-            <span class="hero-meta-num" data-count="100" data-suffix="%">0</span>
-            <span class="hero-meta-label">caffeinated</span>
+            <span class="hero-meta-num" data-count="420" data-suffix="ppm">0</span>
+            <span class="hero-meta-label">CO&#8322; in the room</span>
           </div>
         </div>
       </section>
@@ -119,41 +120,41 @@
       <section id="mission" class="section">
         <div class="section-head">
           <span class="eyebrow">// mission</span>
-          <h2>Build cool stuff. Help each other. Win the season.</h2>
+          <h2>Measure stuff. Visualize it. Make it useful.</h2>
         </div>
         <div class="mission-grid">
           <article class="card">
             <span class="card-num">01</span>
-            <h3>Ship weekly</h3>
+            <h3>Sensors over speeches</h3>
             <p>
-              Every Friday, every member ships <em>something</em> — a feature,
-              a demo, a write-up, a sticker design. Momentum &gt; perfection.
+              Anyone can post a climate take. We&rsquo;d rather wire up a
+              sensor, log a year of data, and let the chart do the talking.
             </p>
           </article>
           <article class="card">
             <span class="card-num">02</span>
-            <h3>Open by default</h3>
+            <h3>Local first</h3>
             <p>
-              All our code lives on GitHub. All our docs are public. If a
-              teammate is stuck, the answer is one DM (or one PR) away.
+              We pick projects that help our own school, our own town, or our
+              own bedroom first. Scale comes after &ldquo;does it work.&rdquo;
             </p>
           </article>
           <article class="card">
             <span class="card-num">03</span>
-            <h3>Learn loud</h3>
+            <h3>Open data</h3>
             <p>
-              We post our wins <em>and</em> our face-plants. Every bug we squash
-              becomes a lesson the next person on the team doesn&rsquo;t have to
-              relearn from scratch.
+              Every reading we collect goes into a public bucket with a
+              permissive license. If a researcher wants it, it&rsquo;s a
+              <code>curl</code> away.
             </p>
           </article>
           <article class="card">
             <span class="card-num">04</span>
-            <h3>Stay green</h3>
+            <h3>Optimism, evidenced</h3>
             <p>
-              The contribution graph is our scoreboard. We keep it green —
-              and we keep it kind. No gatekeeping, no &ldquo;just google
-              it.&rdquo;
+              We&rsquo;re not doomers. We just want to see the line on the
+              chart go down, and we&rsquo;re willing to build the chart
+              ourselves.
             </p>
           </article>
         </div>
@@ -166,19 +167,19 @@
         </div>
         <div class="stats-grid">
           <div class="stat">
-            <span class="stat-num" data-count="1280">0</span>
+            <span class="stat-num" data-count="980">0</span>
             <span class="stat-label">XP earned</span>
           </div>
           <div class="stat">
-            <span class="stat-num" data-count="38">0</span>
+            <span class="stat-num" data-count="22">0</span>
             <span class="stat-label">pull requests</span>
           </div>
           <div class="stat">
-            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-num" data-count="9">0</span>
             <span class="stat-label">teammates</span>
           </div>
           <div class="stat">
-            <span class="stat-num" data-count="4" data-suffix="/5">0</span>
+            <span class="stat-num" data-count="3" data-suffix="/5">0</span>
             <span class="stat-label">leaderboard rank</span>
           </div>
         </div>
@@ -187,54 +188,57 @@
       <section id="crew" class="section">
         <div class="section-head">
           <span class="eyebrow">// crew</span>
-          <h2>The people behind the green squares.</h2>
+          <h2>The folks under the heat lamp.</h2>
         </div>
         <div class="crew-grid">
           <article class="crew-card">
-            <div class="avatar" data-initials="MX" style="--g1:#00ffa3;--g2:#00c08b"></div>
-            <h3>captain</h3>
-            <p class="role">team lead · full-stack</p>
+            <div class="avatar" data-initials="HL" style="--g1:#c9e84a;--g2:#9bc24a"></div>
+            <h3>head leaf</h3>
+            <p class="role">team lead · climate · code</p>
             <p class="bio">
-              Keeps the standup short and the deploys boring. Lives in
-              <code>main</code>.
+              Carries a multimeter and a strong opinion about heat pumps.
             </p>
           </article>
           <article class="crew-card">
-            <div class="avatar" data-initials="DV" style="--g1:#7af0c0;--g2:#1ea96b"></div>
-            <h3>dev/ops</h3>
-            <p class="role">infra · CI · vibes</p>
-            <p class="bio">Will fight your YAML so you don&rsquo;t have to.</p>
-          </article>
-          <article class="crew-card">
-            <div class="avatar" data-initials="UI" style="--g1:#9affd6;--g2:#33b07a"></div>
-            <h3>design</h3>
-            <p class="role">UI · brand · stickers</p>
+            <div class="avatar" data-initials="AT" style="--g1:#ffd76b;--g2:#cc8a2a"></div>
+            <h3>atmosphere</h3>
+            <p class="role">data · viz · charts</p>
             <p class="bio">
-              Believes a project isn&rsquo;t shipped until there&rsquo;s a
-              sticker.
+              Believes a good chart can change someone&rsquo;s mind. Has
+              evidence.
             </p>
           </article>
           <article class="crew-card">
-            <div class="avatar" data-initials="HW" style="--g1:#5fffb1;--g2:#0a8a5b"></div>
-            <h3>hardware</h3>
-            <p class="role">PCBs · firmware · solder</p>
+            <div class="avatar" data-initials="SR" style="--g1:#ffb84d;--g2:#b87a2a"></div>
+            <h3>sensors</h3>
+            <p class="role">esp32 · solder · battery</p>
             <p class="bio">
-              The reason there&rsquo;s a 3D printer in the corner.
+              Will design you a PCB for a sensor you didn&rsquo;t know you
+              needed.
             </p>
           </article>
           <article class="crew-card">
-            <div class="avatar" data-initials="ML" style="--g1:#b6ffd6;--g2:#4cc28a"></div>
-            <h3>ml/data</h3>
-            <p class="role">notebooks · models · charts</p>
-            <p class="bio">Has a strong opinion about your dataframe.</p>
+            <div class="avatar" data-initials="CM" style="--g1:#e8d97f;--g2:#a68a2e"></div>
+            <h3>comms</h3>
+            <p class="role">writing · outreach · talks</p>
+            <p class="bio">
+              Turns our raw data into a blog post your aunt will actually
+              read.
+            </p>
+          </article>
+          <article class="crew-card">
+            <div class="avatar" data-initials="GR" style="--g1:#dde880;--g2:#7a9c2a"></div>
+            <h3>garden</h3>
+            <p class="role">biology · soil · greenhouse irl</p>
+            <p class="bio">Yes, we have an actual greenhouse. It has wifi.</p>
           </article>
           <article class="crew-card crew-card-open">
             <div class="avatar avatar-open" aria-hidden="true">+</div>
             <h3>you?</h3>
             <p class="role">any role · any level</p>
             <p class="bio">
-              Seriously. If you&rsquo;ve ever pushed a commit, we&rsquo;ve got
-              a seat for you.
+              Bonus points if you&rsquo;ve ever tried (and failed) to keep a
+              houseplant alive. Empathy is a skill.
             </p>
             <a class="crew-cta" href="#join">Claim a seat &rarr;</a>
           </article>
@@ -244,61 +248,62 @@
       <section id="projects" class="section">
         <div class="section-head">
           <span class="eyebrow">// projects</span>
-          <h2>What we&rsquo;re shipping this season.</h2>
+          <h2>What&rsquo;s under the glass right now.</h2>
         </div>
         <div class="projects">
           <article class="project">
             <header>
               <span class="tag">live</span>
-              <h3>leafboard</h3>
+              <h3>airwatch</h3>
             </header>
             <p>
-              A live leaderboard for The Game — pulls commits, deploys, and
-              demo-day votes into one screen. Built with Svelte + a tiny Go
-              backend.
+              A network of cheap PM2.5 sensors around school. Public dashboard,
+              hourly readings, and a Slack bot that yells when the AQI
+              spikes.
             </p>
             <footer>
-              <span>svelte</span><span>go</span><span>postgres</span>
+              <span>esp32</span><span>influxdb</span><span>grafana</span>
             </footer>
           </article>
           <article class="project">
             <header>
               <span class="tag tag-wip">wip</span>
-              <h3>sapling</h3>
+              <h3>therm-os</h3>
             </header>
             <p>
-              A CLI that bootstraps a new hack-night project: repo, README,
-              license, deploy preview, sticker template. One command. Done.
+              A tiny dashboard for our school&rsquo;s HVAC. Goal: figure out
+              how many kWh we can shave off the heating bill without anyone
+              getting cold.
             </p>
             <footer>
-              <span>node</span><span>ink</span><span>oclif</span>
+              <span>python</span><span>mqtt</span><span>nextjs</span>
             </footer>
           </article>
           <article class="project">
             <header>
               <span class="tag tag-wip">wip</span>
-              <h3>moss</h3>
+              <h3>cloudchart</h3>
             </header>
             <p>
-              A tiny e-ink badge that shows your latest GitHub streak. Wear
-              your green squares on your lanyard.
+              An interactive explainer of the greenhouse effect (the real one)
+              for younger Hack Clubbers. Scroll-driven, lots of pretty
+              gradients.
             </p>
             <footer>
-              <span>esp32</span><span>rust</span><span>pcb</span>
+              <span>svelte</span><span>d3</span><span>mdx</span>
             </footer>
           </article>
           <article class="project">
             <header>
               <span class="tag tag-soon">soon</span>
-              <h3>chloro</h3>
+              <h3>composter-cam</h3>
             </header>
             <p>
-              A weekly newsletter that auto-generates from our merged PRs. We
-              tried writing one by hand. We failed. So now we&rsquo;re
-              automating it.
+              A timelapse of the compost bin out back, with temperature and
+              humidity overlays. Yes, it&rsquo;s also a science fair project.
             </p>
             <footer>
-              <span>python</span><span>resend</span><span>cron</span>
+              <span>raspi</span><span>ffmpeg</span><span>s3</span>
             </footer>
           </article>
         </div>
@@ -307,11 +312,12 @@
       <section id="join" class="section join">
         <div class="join-card">
           <span class="eyebrow">// join</span>
-          <h2>Pull up. Push a commit. You&rsquo;re in.</h2>
+          <h2>Bring a sensor. Or a chart. Or just a question.</h2>
           <p>
-            Green Team 2 is open to any high-school hacker in the Hack Club
-            Slack. No application, no interview, no &ldquo;send a resume.&rdquo;
-            Just hop in <code>#green-team-2</code> and say hi.
+            You don&rsquo;t need to be a climate kid to belong here. If
+            you&rsquo;re curious about the world and willing to wire something
+            up, you&rsquo;re in. Find us in <code>#greenhouse-effect</code>
+            on the Hack Club Slack.
           </p>
           <div class="join-actions">
             <a
@@ -338,12 +344,12 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              See us on GitHub
+              See our data
             </a>
           </div>
           <p class="join-fine">
-            Already in? Ping the captain in Slack and we&rsquo;ll add you to
-            the org.
+            We meet Thursdays. There are usually snacks. The CO&#8322; sensor
+            disagrees with the snacks.
           </p>
         </div>
       </section>
@@ -351,7 +357,7 @@
 
     <footer class="foot">
       <div class="foot-row">
-        <span>&copy; <span id="year">2026</span> Green Team 2</span>
+        <span>&copy; <span id="year">2026</span> The Greenhouse Effect</span>
         <span class="foot-dot">·</span>
         <span>
           Built with
@@ -365,7 +371,7 @@
           >
         </span>
         <span class="foot-dot">·</span>
-        <span>Open source. Always.</span>
+        <span>Open data. Always.</span>
       </div>
     </footer>
 
