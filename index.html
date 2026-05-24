@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a1f14" />
+    <meta
+      name="description"
+      content="Green Team 2 — Hack Club: The Game. A squad of teen hackers building, shipping, and racking up XP."
+    />
+    <meta property="og:title" content="Green Team 2 · Hack Club: The Game" />
+    <meta
+      property="og:description"
+      content="A squad of teen hackers building, shipping, and racking up XP for Hack Club: The Game."
+    />
+    <meta property="og:type" content="website" />
+    <title>Green Team 2 · Hack Club: The Game</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300ffa3'/%3E%3Cstop offset='1' stop-color='%2300c08b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23g)' d='M32 4C18 14 10 24 10 36c0 13 10 22 22 22s22-9 22-22c0-12-8-22-22-32zm0 14c8 7 14 14 14 22 0 8-6 14-14 14S18 48 18 40c0-8 6-15 14-22z'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Green Team 2 home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22">
+            <path
+              d="M12 2c-5 4-8 8-8 13a8 8 0 0 0 16 0c0-5-3-9-8-13Zm0 5c3 3 5 6 5 9a5 5 0 0 1-10 0c0-3 2-6 5-9Z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-line">GREEN&nbsp;TEAM&nbsp;2</span>
+          <span class="brand-sub">hack club · the game</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#mission">Mission</a>
+        <a href="#stats">Stats</a>
+        <a href="#crew">Crew</a>
+        <a href="#projects">Projects</a>
+        <a class="cta" href="#join">Join us</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-tag">
+          <span class="dot"></span>
+          <span>Team #02 · Status: shipping</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="line">We&rsquo;re</span>
+          <span class="line gradient">Green Team 2.</span>
+          <span class="line">We hack. We ship.</span>
+        </h1>
+        <p class="hero-sub">
+          A crew of teen hackers competing in
+          <strong>Hack&nbsp;Club: The&nbsp;Game</strong> — a season-long quest
+          where every commit, demo, and side project earns XP for the team.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#join">
+            <span>Join the team</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M5 12h14M13 5l7 7-7 7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="#projects">See projects</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <span class="hero-meta-num" data-count="2026">0</span>
+            <span class="hero-meta-label">season</span>
+          </div>
+          <div>
+            <span class="hero-meta-num" data-count="42">0</span>
+            <span class="hero-meta-label">commits / wk</span>
+          </div>
+          <div>
+            <span class="hero-meta-num" data-count="7">0</span>
+            <span class="hero-meta-label">projects live</span>
+          </div>
+          <div>
+            <span class="hero-meta-num" data-count="100" data-suffix="%">0</span>
+            <span class="hero-meta-label">caffeinated</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission" class="section">
+        <div class="section-head">
+          <span class="eyebrow">// mission</span>
+          <h2>Build cool stuff. Help each other. Win the season.</h2>
+        </div>
+        <div class="mission-grid">
+          <article class="card">
+            <span class="card-num">01</span>
+            <h3>Ship weekly</h3>
+            <p>
+              Every Friday, every member ships <em>something</em> — a feature,
+              a demo, a write-up, a sticker design. Momentum &gt; perfection.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">02</span>
+            <h3>Open by default</h3>
+            <p>
+              All our code lives on GitHub. All our docs are public. If a
+              teammate is stuck, the answer is one DM (or one PR) away.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">03</span>
+            <h3>Learn loud</h3>
+            <p>
+              We post our wins <em>and</em> our face-plants. Every bug we squash
+              becomes a lesson the next person on the team doesn&rsquo;t have to
+              relearn from scratch.
+            </p>
+          </article>
+          <article class="card">
+            <span class="card-num">04</span>
+            <h3>Stay green</h3>
+            <p>
+              The contribution graph is our scoreboard. We keep it green —
+              and we keep it kind. No gatekeeping, no &ldquo;just google
+              it.&rdquo;
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="stats" class="section stats">
+        <div class="section-head">
+          <span class="eyebrow">// scoreboard</span>
+          <h2>The numbers, live-ish.</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-num" data-count="1280">0</span>
+            <span class="stat-label">XP earned</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="38">0</span>
+            <span class="stat-label">pull requests</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-label">teammates</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4" data-suffix="/5">0</span>
+            <span class="stat-label">leaderboard rank</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="crew" class="section">
+        <div class="section-head">
+          <span class="eyebrow">// crew</span>
+          <h2>The people behind the green squares.</h2>
+        </div>
+        <div class="crew-grid">
+          <article class="crew-card">
+            <div class="avatar" data-initials="MX" style="--g1:#00ffa3;--g2:#00c08b"></div>
+            <h3>captain</h3>
+            <p class="role">team lead · full-stack</p>
+            <p class="bio">
+              Keeps the standup short and the deploys boring. Lives in
+              <code>main</code>.
+            </p>
+          </article>
+          <article class="crew-card">
+            <div class="avatar" data-initials="DV" style="--g1:#7af0c0;--g2:#1ea96b"></div>
+            <h3>dev/ops</h3>
+            <p class="role">infra · CI · vibes</p>
+            <p class="bio">Will fight your YAML so you don&rsquo;t have to.</p>
+          </article>
+          <article class="crew-card">
+            <div class="avatar" data-initials="UI" style="--g1:#9affd6;--g2:#33b07a"></div>
+            <h3>design</h3>
+            <p class="role">UI · brand · stickers</p>
+            <p class="bio">
+              Believes a project isn&rsquo;t shipped until there&rsquo;s a
+              sticker.
+            </p>
+          </article>
+          <article class="crew-card">
+            <div class="avatar" data-initials="HW" style="--g1:#5fffb1;--g2:#0a8a5b"></div>
+            <h3>hardware</h3>
+            <p class="role">PCBs · firmware · solder</p>
+            <p class="bio">
+              The reason there&rsquo;s a 3D printer in the corner.
+            </p>
+          </article>
+          <article class="crew-card">
+            <div class="avatar" data-initials="ML" style="--g1:#b6ffd6;--g2:#4cc28a"></div>
+            <h3>ml/data</h3>
+            <p class="role">notebooks · models · charts</p>
+            <p class="bio">Has a strong opinion about your dataframe.</p>
+          </article>
+          <article class="crew-card crew-card-open">
+            <div class="avatar avatar-open" aria-hidden="true">+</div>
+            <h3>you?</h3>
+            <p class="role">any role · any level</p>
+            <p class="bio">
+              Seriously. If you&rsquo;ve ever pushed a commit, we&rsquo;ve got
+              a seat for you.
+            </p>
+            <a class="crew-cta" href="#join">Claim a seat &rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head">
+          <span class="eyebrow">// projects</span>
+          <h2>What we&rsquo;re shipping this season.</h2>
+        </div>
+        <div class="projects">
+          <article class="project">
+            <header>
+              <span class="tag">live</span>
+              <h3>leafboard</h3>
+            </header>
+            <p>
+              A live leaderboard for The Game — pulls commits, deploys, and
+              demo-day votes into one screen. Built with Svelte + a tiny Go
+              backend.
+            </p>
+            <footer>
+              <span>svelte</span><span>go</span><span>postgres</span>
+            </footer>
+          </article>
+          <article class="project">
+            <header>
+              <span class="tag tag-wip">wip</span>
+              <h3>sapling</h3>
+            </header>
+            <p>
+              A CLI that bootstraps a new hack-night project: repo, README,
+              license, deploy preview, sticker template. One command. Done.
+            </p>
+            <footer>
+              <span>node</span><span>ink</span><span>oclif</span>
+            </footer>
+          </article>
+          <article class="project">
+            <header>
+              <span class="tag tag-wip">wip</span>
+              <h3>moss</h3>
+            </header>
+            <p>
+              A tiny e-ink badge that shows your latest GitHub streak. Wear
+              your green squares on your lanyard.
+            </p>
+            <footer>
+              <span>esp32</span><span>rust</span><span>pcb</span>
+            </footer>
+          </article>
+          <article class="project">
+            <header>
+              <span class="tag tag-soon">soon</span>
+              <h3>chloro</h3>
+            </header>
+            <p>
+              A weekly newsletter that auto-generates from our merged PRs. We
+              tried writing one by hand. We failed. So now we&rsquo;re
+              automating it.
+            </p>
+            <footer>
+              <span>python</span><span>resend</span><span>cron</span>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section id="join" class="section join">
+        <div class="join-card">
+          <span class="eyebrow">// join</span>
+          <h2>Pull up. Push a commit. You&rsquo;re in.</h2>
+          <p>
+            Green Team 2 is open to any high-school hacker in the Hack Club
+            Slack. No application, no interview, no &ldquo;send a resume.&rdquo;
+            Just hop in <code>#green-team-2</code> and say hi.
+          </p>
+          <div class="join-actions">
+            <a
+              class="btn btn-primary"
+              href="https://hackclub.com/slack/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Join Hack Club Slack</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+                <path
+                  d="M14 5h5v5M19 5l-9 9M5 5v14h14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See us on GitHub
+            </a>
+          </div>
+          <p class="join-fine">
+            Already in? Ping the captain in Slack and we&rsquo;ll add you to
+            the org.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-row">
+        <span>&copy; <span id="year">2026</span> Green Team 2</span>
+        <span class="foot-dot">·</span>
+        <span>
+          Built with
+          <span class="heart" aria-hidden="true">&lt;3</span>
+          for
+          <a
+            href="https://hackclub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Hack&nbsp;Club</a
+          >
+        </span>
+        <span class="foot-dot">·</span>
+        <span>Open source. Always.</span>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
